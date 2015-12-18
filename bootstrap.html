@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>conestogapizzeria</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+
+</head>
+<body>
+<img src="1.jpg" class="img-responsive"style="width:1500px;height:500px"">
+<div class="container">
+  <div class="jumbotron">
+    <h1>Conestoga Pizzeria</h1>
+	<h2>Login as admin</h2>
+	<form data-toggle="validator" role="form" action='ref.html' method='post'>
+								<div class="form-group">
+									<label for="Username" class="control-label">Username:</label>
+									<input type="text" class="form-control" id="Username" placeholder="Username" required>
+								</div>
+								<div class="form-group">
+									<label for="password" class="control-label">Password:</label>
+									<input type="password" class="form-control" id="password" placeholder="Password" required>
+								</div>
+								
+								
+								<div class="form-group">
+										<button class="btn btn-danger" type="submit">Submit</button>
+										<button class="btn btn-danger" type="reset">Reset</button></div>
+						</form>
+	
+    
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Enter your details</h3 >.
+	  <form>
+	  <form data-toggle="validator" role="form">
+	  <div id="inputs">
+        <div id="name" class="form-group">
+		
+        <label for="name">Full name:</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your name" required/>
+        </div>
+     <div id="address" class="form-group">
+     <label for="address">Address:</label>
+     <input type="text" id="address" class="form-control" placeholder="Enter your address line 1" required/>
+     </div>
+     </div>
+	 <div id="postal" class="form-group">
+        <label for="postal">Postal code:</label>
+        <input type="text" id="postal" class="form-control" placeholder="Enter your postal code" reuired/>
+      </div>
+	  <div id="city" class="form-group">
+        <label for="city">City:</label>
+        <input type="text" id="city" class="form-control" placeholder="Enter your city"/>
+      </div>
+	  	     <div class="form-group">
+      <label for="province">Province</label>
+	  
+      <select class="form-control" id="province">
+	  
+	  <option>Select</option>
+        <option>Ontario</option>
+        <option>Manitoba</option>
+        <option>Qubec</option>
+        <option>Saskatchewan</option>
+      </select>
+	 
+
+	  </div>
+	  <div id="num" class="form-group">
+        <label for="num">Number:</label>
+        <input type="number" id="num" class="form-control" placeholder="Enter your telephone-number" maxlength="10" required>
+		<div class="help-block with-errors"></div>
+      </div>
+	  	 
+		 <div id="email" class="form-group">
+        <label for="email">e-mail address:</label>
+        
+		<input type="email" class="form-control" id="email" placeholder="Email" data-error="Invalid e-mail address" required>
+    <div class="help-block with-errors"></div>
+      </div>
+	  <br>
+     <div id="controls">
+       <button type="submit" class="btn btn-success">Submit</button>
+	   <button type="reset" class="btn btn-danger">Reset</button>
+     </div>
+	 </form>
+	 
+    </div>
+    <div class="col-sm-4">
+    </div>
+    
+	
+	<div class="col-sm-4">
+     <h3>Order information</h3>
+	 <form>
+	 
+    <div class="form-group">
+      <label for="size">Select Pizza size:</label>
+	  
+      <select class="form-control" id="size">
+	  
+	  <option>Select</option>
+        <option>Small :$5</option>
+        <option>Medium :$10</option>
+        <option>Large  :$15</option>
+        <option>x-l :$20</option>
+      </select>
+	 
+
+	  </div>
+  
+	  
+	  
+	  <h4>Crust types:</h4>
+	  
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Hand-tossed
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Pan
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Stuffed
+    </label>
+	<label class="radio-inline">
+      <input type="radio" name="optradio">Thin
+    </label>
+  
+   
+ <br>
+ <h4>Toppings</h4>
+  
+    <div class="form-group">
+	  <form role="form">
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Bacon strips</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Chicken</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="">Anchovies</label>
+    </div>
+	 <div class="checkbox">
+      <label><input type="checkbox" value="">Pepperoni</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="">Veggies</label>
+    </div>
+	 <div class="checkbox">
+      <label><input type="checkbox" value="">Parmesan cheese</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="">Extra cheese</label>
+    </div>
+	    <div class="checkbox disabled">
+      <label><input type="checkbox" value="">Chipotle chicken</label>
+    </div>
+	 <div class="checkbox">
+      <label><input type="checkbox" value="">Pineapple</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="">Mozarella cheese</label>
+    </div>
+	</div>
+  <br>
+      
+   <div id="controls">
+       <button type="submit" class="btn btn-success">Submit</button>
+	   <button type="reset" class="btn btn-danger">Reset</button>
+     </div>  
+        
+        
+    </form>
+	 
+     
+    
+	 
+	  
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
